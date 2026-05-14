@@ -8,10 +8,11 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <img src="/rasm1.png" alt="" />
         </div>
+<div className="flex items-center gap-3">
 
 <Link href={"/korzina"}>
 
-        <button  className=" position-absolute top-4 left-5 w-[150px] flex justify-between items-center h-[40px] pl-8  pr-8 bg-orange-600 rounded-[30px] text-white hover:bg-orange-500 text-sm  ">
+        <button  className="  top-4 left-5 w-[150px] flex justify-between items-center h-[40px] pl-8  pr-8 bg-orange-600 rounded-[30px] text-white hover:bg-orange-500 text-sm  ">
           <div className="flex items-center justify-around">
             520 <LiaRubleSignSolid />{" "}
           </div>
@@ -21,6 +22,15 @@ export default function Header() {
           </div>
         </button>
 </Link>
+<Link href={"/admin"}>
+ <button  className=" top-4 left-5 w-[150px] flex justify-center items-center h-[40px] pl-8  pr-8 bg-orange-600 rounded-[30px] text-white hover:bg-orange-500 text-sm  ">
+         
+          
+           Admin
+          
+        </button>
+</Link>
+</div>
      
       </div>
     </header>
