@@ -4,50 +4,82 @@ export default function Korzina() {
   return (
     <div className="flex justify-center p-8">
       <div className="w-full max-w-[900px]">
+        <img
+          className="mb-18 border-b border-gray-200"
+          src="/rasm1.png"
+          alt=""
+        />
 
-
-        <div className="flex items-center justify-between mb-6">
-         <h2 className="text-2xl font-bold flex gap-2"> <SlBasket />  Корзина</h2>
-<img src="/rasm2.png" alt="" />
+        <div className="flex items-center  justify-between mb-6">
+          <h2 className="text-2xl font-bold flex gap-2">
+            {" "}
+            <SlBasket /> Корзина
+          </h2>
+          <img src="/rasm2.png" alt="" />
         </div>
 
-        <div className="flex flex-col gap-6">
-          <div className="flex items-center justify-between border-b pb-4">
+        <div className="w-[760px] mx-auto bg-[#f8f8f8] p-6 rounded-xl">
+          <div className="flex items-center justify-between py-5 border-b border-gray-200">
             <div className="flex items-center gap-4">
-              <div className="w-24 h-24 bg-gray-100 flex items-center justify-center rounded">
-                <span className="text-gray-500 font-bold">LOGO</span>
-              </div>
+              <img
+                src="pizza1.png"
+                className="w-12 h-12 rounded-full"
+                alt="pizzza"
+              />
+
               <div>
-                <h3 className="font-semibold">Сырный цыпленок</h3>
-                <p className="text-sm text-gray-500">тонкое тесто, 26 см</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <button className="w-[32px] text-white h-[32px] rounded-[60px] bg-orange-500">-</button>
+                <h3 className="text-[16px] font-semibold text-gray-900">
+                  Сырный цыпленок
+                </h3>
+                <p className="text-[13px] text-gray-400">
+                  тонкое тесто, 26 см.
+                </p>
               </div>
             </div>
+
+            <div className="flex items-center gap-3">
+              <button className="w-8 h-8 flex items-center justify-center rounded-full border border-orange-500 border-orange-500 text-lg">
+                −
+              </button>
+
+              <span className="text-[16px] font-medium text-gray-900">2</span>
+
+              <button className="w-8 h-8 flex items-center justify-center rounded-full border border-orange-500 text-orange-500 text-lg">
+                +
+              </button>
+            </div>
+
             <div className="flex items-center gap-6">
-              <span className="text-gray-700">x2</span>
-              <span className="font-medium">770 ₽</span>
+              <span className="text-[16px] font-semibold text-gray-900">
+                770 ₽
+              </span>
+
+              <button className="w-8 h-8 flex items-center justify-center rounded-full border border-gray-200 text-gray-300 text-lg">
+                ×
+              </button>
             </div>
           </div>
 
-        
+          <div className="flex justify-between items-center mt-6">
+            <p className="text-[16px] text-gray-900">
+              Всего пицц: <span className="font-bold">3 шт.</span>
+            </p>
 
-        
-        </div>
+            <p className="text-[16px] text-gray-900">
+              Сумма заказа:
+              <span className="font-bold text-orange-500">900 ₽</span>
+            </p>
+          </div>
 
-        <div className="mt-6 border-t pt-4">
-          <p className="text-gray-700">Всего пицц: <span className="font-semibold">3 шт.</span></p>
-          <p className="text-gray-700">Сумма заказа: <span className="font-semibold">900 ₽</span></p>
-        </div>
+          <div className="flex justify-between items-center mt-6">
+            <button className="px-6 py-3 rounded-full border border-gray-200 text-gray-400 text-[14px]">
+              Вернуться назад
+            </button>
 
-        <div className="flex justify-between mt-6">
-          <button className="px-5 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 text-sm font-medium">
-            Вернуться назад
-          </button>
-          <button className="px-5 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 text-sm font-medium">
-            Оплатить сейчас
-          </button>
+            <button className="px-7 py-3 rounded-full  hover:bg-orange-500 bg-orange-600 text-white font-semibold text-[14px]">
+              Оплатить сейчас
+            </button>
+          </div>
         </div>
       </div>
     </div>

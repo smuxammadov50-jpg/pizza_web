@@ -1,12 +1,12 @@
+import Category from "./_components/Category"
 import Header from "./_components/Header"
-import Categories from "./Home/category/page"
-import Products from "./Home/products/page"
+import Products from "./_components/Products"
 
 function Page() {
   return (
     <div>
       <Header/>
-      <Categories/>
+      <Category/>
       <Products/>
     </div>
   )
