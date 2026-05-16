@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Pizza 1",
+      "price": 500,
+      "imageUrl": "https://via.placeholder.com/150"
+    }
+  ]
+}
